@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive menu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer=""></script>
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="container">
+      <div class="nav__elements">
+        <a href="#header" class="nav__logo">
+          <img src="./img/logo.png" alt="logo">
+        </a>
+        <div class="nav__links">
+          <a href="#what">Зачем?</a>
+          <a href="#cases">Кейсы</a>
+          <a href="#price">Стоимость</a>
+          <a href="#order" class="link-order">Заказать</a>
+        </div>
+        <button class="hamburger">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__elements">
+        <div class="header__content">
+          <h1>
+            <span class="gradient-text">Интерактивное меню</span> для вашего кафе
+          </h1>
+          <ul>
+            <li>Ваше меню на нескольких языках</li>
+            <li>Вы легко менять цены</li>
+            <li>Ваши посетители не ждут</li>
+          </ul>
+        </div>
+        <img src="./img/header__foto.png" alt="header-image">
+      </div>
+  </header>
+
+  <section class="what" id="what">
+    <div class="container">
+      <h2>Зачем?</h2>
+      <div class="what__item what__item_right">
+        <img src="./img/foto1.jpg" alt="">
+        <div class="what__text-block">
+          <h3>Привлечение внимания</h3>
+          <p>
+            Ваше кафе больше не останется незамеченным! Интерактивное меню с QR-кодом привлекает внимание потенциальных клиентов. Простой сканер на двери дает доступ к вашему меню, а информация о доступности на разных языках убеждает каждого прохожего, что ваше кафе заботится о комфорте гостей.          
+          </p>
+        </div>
+      </div>
+      <div class="what__item what__item_left">
+        <img src="./img/foto1.jpg" alt="">
+        <div class="what__text-block">
+          <h3>Меню на языке клиента</h3>
+          <p>
+            Покажите клиентам, что вы их понимаете! Ваше меню доступно на русском, английском, испанском и других языках. Теперь гости из разных стран смогут легко ознакомиться с блюдами и сделать выбор, не теряя времени на перевод.
+          </p>
+        </div>
+      </div>
+      <div class="what__item what__item_right">
+        <img src="./img/foto1.jpg" alt="">
+        <div class="what__text-block">
+          <h3>Ваш клиент не ждёт</h3>
+          <p>
+            Сократите ожидание! Благодаря нашему меню, клиенты могут заранее выбрать блюда и добавить их в корзину. Это ускоряет процесс оформления заказа и позволяет гостям наслаждаться отдыхом, а не ждать.
+          </p>
+        </div>
+      </div>
+      <div class="what__item what__item_left">
+        <img src="./img/foto1.jpg" alt="">
+        <div class="what__text-block">
+          <h3>Вы легко изменяете меню</h3>
+          <p>
+            Забудьте о сложностях с обновлением меню! Теперь всё, что нужно — отредактировать Google Таблицу, и изменения мгновенно появятся на сайте. Быстро, просто и без лишних затрат.
+          </p>
+        </div>
+      </div>
+      <div class="what__item what__item_right">
+        <img src="./img/foto1.jpg" alt="">
+        <div class="what__text-block">
+          <h3>Единое меню для сети ваших кафе</h3>
+          <p>
+            Если у вас несколько кафе, поддерживать актуальность меню стало проще. Одно решение для всех заведений: обновляйте данные в одной таблице, и изменения автоматически применятся ко всей сети.
+          </p>
+        </div>
+      </div>
+      <div class="what__item what__item_left">
+        <img src="./img/foto1.jpg" alt="">
+        <div class="what__text-block">
+          <h3>Экономия на печати меню</h3>
+          <p>
+            Сократите расходы на печать! Интерактивное меню избавляет от необходимости регулярно печатать новые меню. Достаточно разместить QR-коды в кафе, и ваши гости всегда будут видеть актуальную информацию.
+          </p>
+        </div>
+      </div>
+      <div class="what__item what__item_right">
+        <img src="./img/foto1.jpg" alt="">
+        <div class="what__text-block">
+          <h3>Современный имидж</h3>
+          <p>
+            Ваше кафе станет выглядеть более современно и технологично в глазах гостей. Интерактивное меню с QR-кодом подчеркивает, что вы заботитесь о комфорте и следуете трендам. Это может стать конкурентным преимуществом.
+          </p>
+        </div>
+      </div>
+      <div class="what__item what__item_left">
+        <img src="./img/foto1.jpg" alt="">
+        <div class="what__text-block">
+          <h3>Меньше ошибок при заказах</h3>
+          <p>
+            Когда клиенты самостоятельно добавляют блюда в корзину через сайт, снижается риск ошибок, связанных с устной передачей информации официанту. Это повышает качество обслуживания и уменьшает вероятность недоразумений.
+          </p>
+        </div>
+      </div>
+      <div class="what__item what__item_right">
+        <img src="./img/foto1.jpg" alt="">
+        <div class="what__text-block">
+          <h3>Уменьшение контакта — безопасность</h3>
+          <p>
+            В условиях повышенного внимания к гигиене (например, после пандемии) клиенты могут чувствовать себя безопаснее, взаимодействуя с меню через телефон, а не с физическим меню.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cases" id="cases">
+    <div class="container">
+      <h2>Кейсы</h2>
+      <div class="cases__list">
+        <a href="https://teachalexit.github.io/CIAO-CACAO/" class="cases__item" target="_blank">
+          <img src="./img/cases__logo1.png" alt="">
+        </a>
+        <a href="https://iskanderbeycafe.github.io/menu/index.html" class="cases__item" target="_blank">
+          <img src="./img/cases__logo2.svg" alt="">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="prices" id="price">
+    <div class="container">
+      <h2>Стоимость</h2>
+      <div class="prices__list">
+        <div class="prices__item price-box">
+          <h4>Базовый</h4>
+          <p class="price-box__cost">
+            <span>$30</span>
+            в месяц
+          </p>
+          <ul>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Доступ к базе данных
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Обший QR код
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              3 языка
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Индивидуальный дизайн
+            </li>
+          </ul>
+        </div>
+        <div class="prices__item price-box price-box_pro">
+          <h4>Расширяный</h4>
+          <p class="price-box__cost">
+            <span>$50</span>
+            в месяц
+          </p>
+          <ul>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Доступ к базе данных
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              QR код для каждого стола
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Нет ограничений по языкам
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Индивидуальный дизайн
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Функция заказа
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Сбор аналитики заказов
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="order">
+    <div class="container">
+      <h2>Заказать</h2>
+      <h3>Мы  связажимся с вами в течении 24 часов</h3>
+      <form target="form-submit" method="post"
+        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeAEOGmx-rY-vMroj6afvsC1keaW4Yxz76MikQ2gXXJCpNcIg/formResponse">
+        <iframe name="form-submit"></iframe>
+        <div class="form-submit">
+          <h3>Ваша заявка отправлена</h3>
+        </div>
+        <label for="name">Ваше имя</label>
+        <input id="name" name="entry.1646956788" type="text" placeholder="Введите имя" required>
+        <label for="tel">Ваше телефон</label>
+        <input id="tel" name="entry.1420576568" type="tel" placeholder="Введите телефон" required>
+        <button type="submit">Отправить</button>
+        <p>
+          Ваши персональные данные защищены. Подробный текст политики конфиденциальности доступен <span
+            class="protection">здесь</span>.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer__elements">
+        <div class="footer__contact">
+          <a class="telega" href="https://t.me/ZigAlex"><i class="fa-brands fa-telegram"></i></a>
+          <a class="whatsapp" href="https://wa.me/5491161349627"><i class="fa-brands fa-whatsapp"></i></a>
+          <a class="instagram" href="https://www.instagram.com/alex_it_teacher/"><i
+              class="fa-brands fa-instagram"></i></a>
+        </div>
+
+        <a class="footer__mailLink" href="mailto:interactivemenuqr@gmail.com">interactivemenuqr@gmail.com</a>
+
+        <a href="#header" class="footer__logo">
+          <img src="./img/logo.png" alt="">
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
