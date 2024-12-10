@@ -27,7 +27,7 @@ body::-webkit-scrollbar{
   width: 6px;
 }
 body::-webkit-scrollbar-thumb{
-  background: linear-gradient(to right bottom, var(--color5), var(--color4));
+  background: linear-gradient(to right bottom, var(--color3), var(--color4));
   border-radius: 6px;
 }
 
