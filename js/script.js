@@ -39,6 +39,7 @@ for (let i = 0; i < linkAll.length; i++) {
 
 
 
+const lang = document.documentElement.lang;
 const formContact = document.querySelector('.contact form');
 const formIframe = formContact.querySelector('iframe');
 let chatToken = '';
@@ -67,7 +68,7 @@ formIframe.onload = function () {
   const chatId = '396606827';
   const Name = formContact.querySelector('#name').value;
   const Tel = formContact.querySelector('#tel').value;
-  const messageText = `‼️ \nНовый заказ на меню\n🔘Имя - ${Name}\n🔘Телефон - ${Tel}`;
+  const messageText = `‼️ \nНовый заказ на меню\n🔘 Имя - ${Name}\n🔘 Телефон - ${Tel} \n🔘 Язык - ${lang}`;
 
   const url = `https://api.telegram.org/bot${chatToken}/sendMessage`;
   const params = {

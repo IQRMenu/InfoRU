@@ -424,6 +424,7 @@ form iframe {
   bottom: -10px;
   left: -10px;
   background-color: var(--color3);
+  color: var(--color2);
   border-radius: 10px;
   display: flex;
   align-items: center;
